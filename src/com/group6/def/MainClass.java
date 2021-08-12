@@ -2,12 +2,19 @@ package com.group6.def;
 
 import java.util.Scanner;
 
+import com.group6.desktop.DeskTop;
+import com.group6.moniter.Moniter_soyoung;
+import com.group6.mouse.mouse_joohui;
+
 public class MainClass {
 
 	public static void main(String[] args) {
+		DeskTop hjm = new DeskTop();
+		mouse_joohui mou = new mouse_joohui();
 		
 		Scanner sc = new Scanner(System.in);
 		int choice;
+		Moniter_soyoung mon = new Moniter_soyoung();  
 		
 		System.out.println("--- 컴퓨터 ---");
 		while(true) {
@@ -15,20 +22,22 @@ public class MainClass {
 			System.out.println("2.본체");		//홍준모
 			System.out.println("3.스피커");	//정선환
 			System.out.println("4.마우스");	//주희
-			System.out.println("5.키보드");	//키보드
+			System.out.println("5.키보드");	//정청하
 			System.out.println("6.닫기");
 			System.out.print(">>>> : ");
 			choice = sc.nextInt();
 			switch(choice) {
 			case 1 :
-				System.out.println("냉장고");
+				mon.bootUp();
+				mon.bootDown();
 				break;	
 			case 2 :
+				hjm.PowerOn();
 				break;	
 			case 3 :
 				break;
 			case 4 :
-				System.out.println("마우스 작동");
+				mou.Mouse();
 				break;
 			case 5 :
 				break;
