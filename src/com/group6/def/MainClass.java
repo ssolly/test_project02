@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.group6.desktop.DeskTop;
 import com.group6.moniter.Moniter_soyoung;
+import com.group6.speaker.Speaker;
 
 public class MainClass {
 
@@ -13,6 +14,7 @@ public class MainClass {
 		Scanner sc = new Scanner(System.in);
 		int choice;
 		Moniter_soyoung mon = new Moniter_soyoung();  
+		Speaker spe = new Speaker();
 		
 		System.out.println("--- ÄÄÇ»ÅÍ ---");
 		while(true) {
@@ -33,6 +35,8 @@ public class MainClass {
 				hjm.PowerOn();
 				break;	
 			case 3 :
+				spe.speakerOn();
+				spe.speakerOff();
 				break;
 			case 4 :
 				break;
