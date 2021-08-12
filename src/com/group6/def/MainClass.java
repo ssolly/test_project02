@@ -28,6 +28,7 @@ public class MainClass {
 			case 3 :
 				break;
 			case 4 :
+				System.out.println("마우스 작동");
 				break;
 			case 5 :
 				break;
