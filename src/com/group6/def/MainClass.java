@@ -2,12 +2,15 @@ package com.group6.def;
 
 import java.util.Scanner;
 
+import com.group6.moniter.Moniter_soyoung;
+
 public class MainClass {
 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		int choice;
+		Moniter_soyoung mon = new Moniter_soyoung();  
 		
 		System.out.println("--- 컴퓨터 ---");
 		while(true) {
@@ -21,7 +24,8 @@ public class MainClass {
 			choice = sc.nextInt();
 			switch(choice) {
 			case 1 :
-				System.out.println("냉장고");
+				mon.bootUp();
+				mon.bootDown();
 				break;	
 			case 2 :
 				break;	
