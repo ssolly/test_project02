@@ -20,7 +20,7 @@ public class MainClass {
 			System.out.println("2.본체");		//홍준모
 			System.out.println("3.스피커");	//정선환
 			System.out.println("4.마우스");	//주희
-			System.out.println("5.키보드");	//키보드
+			System.out.println("5.키보드");	//정청하
 			System.out.println("6.닫기");
 			System.out.print(">>>> : ");
 			choice = sc.nextInt();
