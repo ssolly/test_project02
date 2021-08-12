@@ -2,9 +2,12 @@ package com.group6.def;
 
 import java.util.Scanner;
 
+import com.group6.desktop.DeskTop;
+
 public class MainClass {
 
 	public static void main(String[] args) {
+		DeskTop hjm = new DeskTop();
 		
 		Scanner sc = new Scanner(System.in);
 		int choice;
@@ -24,6 +27,7 @@ public class MainClass {
 				System.out.println("≥√¿Â∞Ì");
 				break;	
 			case 2 :
+				hjm.PowerOn();
 				break;	
 			case 3 :
 				break;
