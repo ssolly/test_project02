@@ -8,11 +8,11 @@ public class DeskTop {
 	int cnt=1;
 	public void PowerOn() {
 		Scanner scan =new Scanner(System.in);
-		System.out.println("Àü¿øÀ» ÄÑ½Ã·Á¸é 1.ON 2.OFF");
+		System.out.println("ì „ì›ì„ ì¼œì‹œë ¤ë©´ 1.ON 2.OFF");
 		System.out.print(">>>");
 		int num =scan.nextInt();
 		if(num == 1) {
-			System.out.println("Àü¿øÀ» ÄÕ´Ï´Ù");
+			System.out.println("ì „ì›ì„ ì¼­ë‹ˆë‹¤");
 			try {
 				for(int i =0; i<5; i++) {
 					TimeUnit.SECONDS.sleep(1);
@@ -32,56 +32,56 @@ public class DeskTop {
 			}
 			
 		}else {
-			System.out.println("Àü¿øÀ» ²ü´Ï´Ù");
+			System.out.println("ì „ì›ì„ ë•ë‹ˆë‹¤");
 			System.exit(0);
 		}
 	}
 		
 		public void cooler () {
 			Scanner scan =new Scanner(System.in);
-			System.out.println("Äğ·¯´Â 0~5´Ü");
-			System.out.println("up , down Áß ÀÔ·Â");
+			System.out.println("ì¿¨ëŸ¬ëŠ” 0~5ë‹¨");
+			System.out.println("up , down ì¤‘ ì…ë ¥");
 			System.out.print(">>>");
 			String str=scan.next();
 			if(str.contains("up")) {
 				this.cnt++;
 				if(cnt==6) {
-					System.out.println("ÆÒ ¼Óµµ´Â 5´Ü ±îÁö ÀÔ´Ï´Ù");
+					System.out.println("íŒ¬ ì†ë„ëŠ” 5ë‹¨ ê¹Œì§€ ì…ë‹ˆë‹¤");
 					this.cnt--;
-					System.out.println("ÇöÀç Äğ·¯ ¼Óµµ :" + this.cnt);
+					System.out.println("í˜„ì¬ ì¿¨ëŸ¬ ì†ë„ :" + this.cnt);
 					System.out.println("===================");
 					return;
 				}
-				System.out.println("ÆÒ ¼Óµµ°¡ »¡¶óÁ³½À´Ï´Ù");
-				System.out.println("ÇöÀç Äğ·¯ ¼Óµµ :" + this.cnt);
+				System.out.println("íŒ¬ ì†ë„ê°€ ë¹¨ë¼ì¡ŒìŠµë‹ˆë‹¤");
+				System.out.println("í˜„ì¬ ì¿¨ëŸ¬ ì†ë„ :" + this.cnt);
 				System.out.println("===================");
 			}else if(str.contains("down")) {
 				this.cnt--;
 				if(this.cnt<0) {
-					System.out.println("Äğ·¯°¡ ¸ØÃçÀÖ½À´Ï´Ù");
+					System.out.println("ì¿¨ëŸ¬ê°€ ë©ˆì¶°ìˆìŠµë‹ˆë‹¤");
 					this.cnt++;
 					System.out.println("===================");
 					return;
 				}
-				System.out.println("ÆÒ ¼Óµµ°¡ ÁÙ¾ú½À´Ï´Ù");
-				System.out.println("ÇöÀç Äğ·¯ ¼Óµµ :" + this.cnt);
+				System.out.println("íŒ¬ ì†ë„ê°€ ì¤„ì—ˆìŠµë‹ˆë‹¤");
+				System.out.println("í˜„ì¬ ì¿¨ëŸ¬ ì†ë„ :" + this.cnt);
 				System.out.println("===================");
 		}
 		
 		}	
 		public void reboot() {
-			System.out.println("ÄÄÇ»ÅÍ¸¦ ÀçºÎÆÃ ÇÕ´Ï´Ù.");
-			System.out.println("¼Ò¿ä ½Ã°£: 6ÃÊ");
+			System.out.println("ì»´í“¨í„°ë¥¼ ì¬ë¶€íŒ… í•©ë‹ˆë‹¤.");
+			System.out.println("ì†Œìš” ì‹œê°„: 6ì´ˆ");
 			try {
 				for(int i =1; i<7; i++) {
 				TimeUnit.SECONDS.sleep(1);
-				System.out.println(i+"ÃÊ...");
+				System.out.println(i+"ì´ˆ...");
 				}
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 			
-			System.out.println("ÀçºÎÆÃ ¿Ï·á");
+			System.out.println("ì¬ë¶€íŒ… ì™„ë£Œ");
 			System.out.println("===================");
 			return;
 	
