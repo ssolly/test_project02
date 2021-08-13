@@ -11,15 +11,12 @@ import com.group6.speaker.Speaker;
 
 
 public class MainClass {
-
 	public static void main(String[] args) {
 		DeskTop hjm = new DeskTop();
-
 		mouse_joohui mou = new mouse_joohui();
-		
 		Scanner sc = new Scanner(System.in);
-		String str;
-		int choice;
+int choice;
+		int hjmnum=0;
 		Moniter_soyoung mon = new Moniter_soyoung();  
 		Speaker spe = new Speaker();
 		
@@ -40,9 +37,22 @@ public class MainClass {
 				mon.bootDown();
 				break;	
 			case 2 :
+				int num=0;
+				if(hjmnum==0) {
 				hjm.PowerOn();
+				hjmnum++;
+				}
 				System.out.println("=============");
+				System.out.println("1.쿨러설정 2.재부팅");
+				 num = sc.nextInt();
+				 if(num==0) {
+				
+				 }
+				 else if(num==1) {
 					hjm.cooler();
+				}else if(num==2) {
+					hjm.reboot();
+				}
 					break;	
 			case 3 :
 				spe.speakerOn();

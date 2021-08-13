@@ -22,7 +22,7 @@ public class DeskTop {
 		
 		public void cooler () {
 			Scanner scan =new Scanner(System.in);
-			System.out.println("쿨러는 1~5단");
+			System.out.println("쿨러는 0~5단");
 			System.out.println("up , down 중 입력");
 			System.out.print(">>>");
 			String str=scan.next();
@@ -32,23 +32,41 @@ public class DeskTop {
 					System.out.println("팬 속도는 5단 까지 입니다");
 					this.cnt--;
 					System.out.println("현재 쿨러 속도 :" + this.cnt);
+					System.out.println("===================");
 					return;
 				}
 				System.out.println("팬 속도가 빨라졌습니다");
 				System.out.println("현재 쿨러 속도 :" + this.cnt);
+				System.out.println("===================");
 			}else if(str.contains("down")) {
 				this.cnt--;
 				if(this.cnt<0) {
 					System.out.println("쿨러가 멈춰있습니다");
 					this.cnt++;
+					System.out.println("===================");
 					return;
 				}
 				System.out.println("팬 속도가 줄었습니다");
 				System.out.println("현재 쿨러 속도 :" + this.cnt);
+				System.out.println("===================");
 		}
 		
 		}	
-		
+		public void reboot() {
+			System.out.println("컴퓨터를 재부팅 합니다.");
+			System.out.println("소요 시간: 6초");
+			try {
+				for(int i =1; i<7; i++) {
+				TimeUnit.SECONDS.sleep(1);
+				System.out.println(i+"초...");
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+			System.out.println("재부팅 완료");
+			System.out.println("===================");
+			return;
 	
 			
 		
@@ -57,6 +75,6 @@ public class DeskTop {
 		
 		
 		
-		
+		}	
 		
 }
