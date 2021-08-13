@@ -13,6 +13,23 @@ public class DeskTop {
 		int num =scan.nextInt();
 		if(num == 1) {
 			System.out.println("전원을 켭니다");
+			try {
+				for(int i =0; i<5; i++) {
+					TimeUnit.SECONDS.sleep(1);
+					System.out.println("....");
+				}
+				cls();
+				System.out.println("=======================\n\n");
+				System.out.println("\tWINDOWS\n\n");
+				System.out.println("=======================\n\n");
+				for(int i =0; i<3; i++) {
+					TimeUnit.SECONDS.sleep(1);
+				}
+				cls();
+				
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			
 		}else {
 			System.out.println("전원을 끕니다");
@@ -68,13 +85,13 @@ public class DeskTop {
 			System.out.println("===================");
 			return;
 	
-			
 		
-		
-		
-		
-		
-		
-		}	
+		}
+		public void cls() {
+			for(int i =0; i<10; i++) {
+				System.out.println();
+			}
+				
+		}
 		
 }

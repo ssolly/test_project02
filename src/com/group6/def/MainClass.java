@@ -20,14 +20,14 @@ int choice;
 		Moniter_soyoung mon = new Moniter_soyoung();  
 		Speaker spe = new Speaker();
 		
-		System.out.println("--- ��ǻ�� ---");
+		System.out.println("--- 컴퓨터 ---");
 		while(true) {
 			System.out.println("1.모니터");	//�ּҿ�
-			System.out.println("2.컴퓨터");		//ȫ�ظ�
+			System.out.println("2.본체");		//ȫ�ظ�
 			System.out.println("3.스피커");	//����ȯ
 			System.out.println("4.마우스");	//����
-			System.out.println("5.Ű����");	//��û��
-			System.out.println("6.�ݱ�");
+			System.out.println("5.키보드");	//��û��
+			System.out.println("6.종료");
 			System.out.print(">>>> : ");
 			choice = sc.nextInt();
 			switch(choice) {
@@ -45,15 +45,12 @@ int choice;
 				System.out.println("=============");
 				System.out.println("1.쿨러설정 2.재부팅");
 				 num = sc.nextInt();
-				 if(num==0) {
-				
-				 }
-				 else if(num==1) {
+				 if(num==1) {
 					hjm.cooler();
 				}else if(num==2) {
 					hjm.reboot();
 				}
-					break;	
+				 break;
 			case 3 :
 				spe.speakerOn();
 				spe.speakerOff();
@@ -64,6 +61,7 @@ int choice;
 			case 5 :
 				break;
 			case 6 :
+				System.out.println("종료 합니다");
 				return;
 			}
 		}
