@@ -35,8 +35,7 @@ public class MainClass {
 				hjm.PowerOn();
 				break;	
 			case 3 :
-				spe.speakerOn();
-				spe.speakerOff();
+				spe.display();
 				break;
 			case 4 :
 				break;
