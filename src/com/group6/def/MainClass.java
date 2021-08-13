@@ -10,35 +10,49 @@ import com.group6.mouse.mouse_joohui;
 import com.group6.speaker.Speaker;
 
 
-public class MainClass {
 
+public class MainClass {
 	public static void main(String[] args) {
 		DeskTop hjm = new DeskTop();
 		mouse_joohui mou = new mouse_joohui();
 		
 		Scanner sc = new Scanner(System.in);
 		int choice;
+		int hjmnum=0;
 		Moniter_soyoung mon = new Moniter_soyoung();  
 		Speaker spe = new Speaker();
 		
-		System.out.println("--- ÄÄÇ»ÅÍ ---");
+		System.out.println("--- ì»´í“¨í„° ---");
 		while(true) {
-			System.out.println("1.¸ð´ÏÅÍ");	//ÃÖ¼Ò¿µ
-			System.out.println("2.º»Ã¼");		//È«ÁØ¸ð
-			System.out.println("3.½ºÇÇÄ¿");	//Á¤¼±È¯
-			System.out.println("4.¸¶¿ì½º");	//ÁÖÈñ
-			System.out.println("5.Å°º¸µå");	//Á¤Ã»ÇÏ
-			System.out.println("6.´Ý±â");
+			System.out.println("1.ëª¨ë‹ˆí„°");	
+			System.out.println("2.ë³¸ì²´");		
+			System.out.println("3.ìŠ¤í”¼ì»¤");	
+			System.out.println("4.ë§ˆìš°ìŠ¤");
+			System.out.println("5.í‚¤ë³´ë“œ");	
+			System.out.println("6.ì¢…ë£Œ");
 			System.out.print(">>>> : ");
 			choice = sc.nextInt();
 			switch(choice) {
 			case 1 :
+				
 				mon.bootUp();
 				mon.bootDown();
 				break;	
 			case 2 :
+				int num=0;
+				if(hjmnum==0) {
 				hjm.PowerOn();
-				break;	
+				hjmnum++;
+				}
+				System.out.println("=============");
+				System.out.println("1.ì¿¨ëŸ¬ì„¤ì • 2.ìž¬ë¶€íŒ…");
+				 num = sc.nextInt();
+				 if(num==1) {
+					hjm.cooler();
+				}else if(num==2) {
+					hjm.reboot();
+				}
+				 break;
 			case 3 :
 				spe.speakerOn();
 				spe.speakerOff();
@@ -49,6 +63,7 @@ public class MainClass {
 			case 5 :
 				break;
 			case 6 :
+				System.out.println("ì¢…ë£Œ í•©ë‹ˆë‹¤");
 				return;
 			}
 		}
