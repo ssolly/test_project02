@@ -45,6 +45,7 @@ public class MainClass {
 				break;
 			case 4 :
 				mou.Mouse();
+				
 				break;
 			case 5 :
 				break;
