@@ -12,7 +12,7 @@ public class Key_CHUNGJ{
     	
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
-        System.out.println("Enter : ");
+        System.out.println("키보드 엔터 : ");
         
         try {
             String s = br.readLine();
