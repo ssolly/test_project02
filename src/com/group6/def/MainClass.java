@@ -2,6 +2,7 @@ package com.group6.def;
 
 import java.util.Scanner;
 
+import com.group6.key.Key_CHUNGJ;
 import com.group6.moniter.Moniter_soyoung;
 
 public class MainClass {
@@ -11,15 +12,16 @@ public class MainClass {
 		Scanner sc = new Scanner(System.in);
 		int choice;
 		Moniter_soyoung mon = new Moniter_soyoung();  
+		Key_CHUNGJ key=new Key_CHUNGJ();
 		
-		System.out.println("--- ÄÄÇ»ÅÍ ---");
+		System.out.println("--- ì»´í“¨í„° ---");
 		while(true) {
-			System.out.println("1.¸ð´ÏÅÍ");	//ÃÖ¼Ò¿µ
-			System.out.println("2.º»Ã¼");		//È«ÁØ¸ð
-			System.out.println("3.½ºÇÇÄ¿");	//Á¤¼±È¯
-			System.out.println("4.¸¶¿ì½º");	//ÁÖÈñ
-			System.out.println("5.Å°º¸µå");	//Á¤Ã»ÇÏ
-			System.out.println("6.´Ý±â");
+			System.out.println("1.ï¿½ï¿½ï¿½ï¿½ï¿½");	//ï¿½Ö¼Ò¿ï¿½
+			System.out.println("2.ï¿½ï¿½Ã¼");		//È«ï¿½Ø¸ï¿½
+			System.out.println("3.ï¿½ï¿½ï¿½ï¿½Ä¿");	//ï¿½ï¿½ï¿½ï¿½È¯
+			System.out.println("4.ï¿½ï¿½ï¿½ì½º");	//ï¿½ï¿½ï¿½ï¿½
+			System.out.println("5.Å°ï¿½ï¿½ï¿½ï¿½");	//ï¿½ï¿½Ã»ï¿½ï¿½
+			System.out.println("6.í‚¤ë³´ë“œ");
 			System.out.print(">>>> : ");
 			choice = sc.nextInt();
 			switch(choice) {
@@ -34,6 +36,8 @@ public class MainClass {
 			case 4 :
 				break;
 			case 5 :
+				
+			
 				break;
 			case 6 :
 				return;
