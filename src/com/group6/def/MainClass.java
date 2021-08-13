@@ -4,12 +4,17 @@ import java.util.Scanner;
 
 import com.group6.desktop.DeskTop;
 import com.group6.moniter.Moniter_soyoung;
+
+import com.group6.mouse.mouse_joohui;
+
 import com.group6.speaker.Speaker;
+
 
 public class MainClass {
 
 	public static void main(String[] args) {
 		DeskTop hjm = new DeskTop();
+		mouse_joohui mou = new mouse_joohui();
 		
 		Scanner sc = new Scanner(System.in);
 		int choice;
@@ -38,6 +43,8 @@ public class MainClass {
 				spe.display();
 				break;
 			case 4 :
+				mou.Mouse();
+				
 				break;
 			case 5 :
 				break;
