@@ -3,35 +3,53 @@ package com.group6.def;
 import java.util.Scanner;
 
 import com.group6.desktop.DeskTop;
+import com.group6.moniter.Moniter_soyoung;
+
+import com.group6.mouse.mouse_joohui;
+
+import com.group6.speaker.Speaker;
+
 
 public class MainClass {
 
 	public static void main(String[] args) {
 		DeskTop hjm = new DeskTop();
+
+		mouse_joohui mou = new mouse_joohui();
 		
 		Scanner sc = new Scanner(System.in);
+		String str;
 		int choice;
+		Moniter_soyoung mon = new Moniter_soyoung();  
+		Speaker spe = new Speaker();
 		
-		System.out.println("--- ƒƒ«ª≈Õ ---");
+		System.out.println("--- ÔøΩÔøΩ«ªÔøΩÔøΩ ---");
 		while(true) {
-			System.out.println("1.∏¥œ≈Õ");	//√÷º“øµ
-			System.out.println("2.∫ª√º");		//»´¡ÿ∏
-			System.out.println("3.Ω∫««ƒø");	//¡§º±»Ø
-			System.out.println("4.∏∂øÏΩ∫");	//¡÷»Ò
-			System.out.println("5.≈∞∫∏µÂ");	//≈∞∫∏µÂ
-			System.out.println("6.¥›±‚");
+			System.out.println("1.Î™®ÎãàÌÑ∞");	//ÔøΩ÷º“øÔøΩ
+			System.out.println("2.Ïª¥Ìì®ÌÑ∞");		//»´ÔøΩÿ∏ÔøΩ
+			System.out.println("3.Ïä§ÌîºÏª§");	//ÔøΩÔøΩÔøΩÔøΩ»Ø
+			System.out.println("4.ÎßàÏö∞Ïä§");	//ÔøΩÔøΩÔøΩÔøΩ
+			System.out.println("5.≈∞ÔøΩÔøΩÔøΩÔøΩ");	//ÔøΩÔøΩ√ªÔøΩÔøΩ
+			System.out.println("6.ÔøΩ›±ÔøΩ");
 			System.out.print(">>>> : ");
 			choice = sc.nextInt();
 			switch(choice) {
 			case 1 :
-				System.out.println("≥√¿Â∞Ì");
+				
+				mon.bootUp();
+				mon.bootDown();
 				break;	
 			case 2 :
 				hjm.PowerOn();
-				break;	
+				System.out.println("=============");
+					hjm.cooler();
+					break;	
 			case 3 :
+				spe.speakerOn();
+				spe.speakerOff();
 				break;
 			case 4 :
+				mou.Mouse();
 				break;
 			case 5 :
 				break;
